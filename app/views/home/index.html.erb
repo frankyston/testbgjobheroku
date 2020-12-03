@@ -1,0 +1,5 @@
+<%= flash[:message] if flash.present? %>
+<%= form_for :user, url: home_update_path do |f| %>
+  ids: <%= f.text_field :ids %><br />
+  <%= f.submit %>
+<% end %>
